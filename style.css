@@ -30,7 +30,7 @@ body {
 
 .hero-logo {
   width: 363px;
-  height: 50;
+  height: 50px;
   margin-top: 56px;
 }
 
@@ -162,8 +162,9 @@ body {
   background-image: url("./public/assets/iteration-2/cta/kart-3.png");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: cover;
+  background-size: contain;
   border-radius: 12px;
+  padding: 36px 30px;
 }
 
 .campaign-text {
@@ -220,4 +221,16 @@ body {
 .top-logo {
   width: 260px;
   flex-shrink: 0;
+}
+
+.campaign-btmtitle {
+  margin: 0;
+  color: #292929;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.campaign-btmtitle span {
+  color: #D80027;
 }
