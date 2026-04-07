@@ -9,6 +9,10 @@ body {
   background: #FAF7F2;
 }
 
+.section-container {
+  width: min(1070px, calc(100% - 48px));
+}
+
 .hero {
   background-color: #CE2829;
   background-image: url("./public/assets/iteration-1/home-banner.png");
@@ -16,8 +20,8 @@ body {
   background-position: center bottom;
   background-size: cover;
 
-  width: 1920px;
-  height: 1080px;
+  width: 100%;
+  min-height: 100vh;
 
   display: flex;
   justify-content: center;
@@ -73,6 +77,7 @@ body {
   font-size: 18px;
 
   color: #292929;
+  text-decoration: none;
 }
 
 .category-bar {
@@ -111,7 +116,6 @@ body {
 }
 
 .campaigns {
-  width: 1070px;
   height: 450px;
   margin: 42px auto 0;
 
@@ -233,4 +237,236 @@ body {
 
 .campaign-btmtitle span {
   color: #D80027;
+}
+
+
+.campaign-bottom-title {
+  margin: 0;
+  color: #292929;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.popular-section {
+  margin: 72px auto 0;
+}
+
+.popular-subtitle {
+  text-align: center;
+  font-family: "Satisfy", cursive;
+  font-size: 32px;
+  line-height: 1;
+  color: #CE2829;
+}
+
+.popular-title {
+  margin-top: 14px;
+  text-align: center;
+  color: #292929;
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.popular-categories {
+  list-style: none;
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.popular-category {
+  height: 66px;
+  min-width: 160px;
+  padding: 0 24px;
+  border-radius: 999px;
+  background: #FFFFFF;
+  justify-content: center;
+}
+
+.popular-category span {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.popular-category img {
+  width: 42px;
+  height: 42px;
+}
+
+.popular-category.active {
+  background: #292929;
+  color: #FFFFFF;
+}
+
+.popular-cards {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.popular-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  min-height: 410px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.popular-card img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+.popular-card-title {
+  margin-top: 22px;
+  width: 100%;
+  font-size: 26px;
+  color: #292929;
+  font-weight: 600;
+}
+
+.popular-card-meta {
+  margin-top: 14px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #5F5F5F;
+  font-size: 18px;
+}
+
+.popular-card-price {
+  margin-top: 16px;
+  width: 100%;
+  color: #292929;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.site-footer {
+  margin-top: 84px;
+  background: #1F1F1F;
+  color: #FFFFFF;
+}
+
+.footer-content {
+  margin: 0 auto;
+  padding: 56px 0;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr;
+  gap: 48px;
+}
+
+.footer-logo {
+  width: 300px;
+}
+
+.footer-contact-list {
+  list-style: none;
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.footer-contact-list img {
+  width: 28px;
+  height: 28px;
+}
+
+.footer-links h3,
+.footer-instagram h3 {
+  font-size: 28px;
+  margin-bottom: 26px;
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links li {
+  font-size: 22px;
+  color: #FFFFFF;
+}
+
+.footer-insta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.footer-insta-grid img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #3A3A3A;
+}
+
+.footer-bottom-content {
+  margin: 0 auto;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  .category-list {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px 0;
+  }
+
+  .category-bar {
+    height: auto;
+    padding: 14px 0;
+  }
+
+  .campaigns {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .campaign-left,
+  .campaign-right,
+  .campaign-top,
+  .campaign-bottom {
+    width: 100%;
+  }
+
+  .popular-categories {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .popular-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
 }
