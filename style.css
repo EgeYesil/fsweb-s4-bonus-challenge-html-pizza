@@ -436,6 +436,12 @@ body {
   font-size: 18px;
 }
 
+.footer-bottom-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
 @media (max-width: 768px) {
   .section-container {
     width: min(1070px, calc(100% - 32px));
