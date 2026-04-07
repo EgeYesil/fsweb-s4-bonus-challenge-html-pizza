@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
   <head>
     <meta charset="UTF-8" />
@@ -7,20 +7,98 @@
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Workintech + 🍕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quattrocento:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <div id="app">
-      <div>
-        <a href="https://github.com/Workintech/fsweb-s5-bonus-challenge-html-pizza" target="_blank">
-          <img src="./workintech.svg" class="logo" alt="Workintech logo">
-        </a>
-        <h1>Hello Coder!</h1>
-        <p class="read-the-docs">
-          Click on the Workintech logo to see the Readme of the project
-        </p>
+    <header class="hero">
+    <div class="hero-content">
+
+      <img 
+      src="./public/assets/iteration-1/logo.svg" 
+      alt="Teknolojik Yemekler"
+      class="hero-logo"
+      >
+      
+      <div class="hero-text">
+        <p class="hero-subtitle">fırsatı kaçırma</p>
+
+        <h1 class="hero-title">
+          KOD ACIKTIRIR <br />
+          PIZZA, DOYURUR
+        </h1>
+
+        <a href="#" class="hero-button">ACIKTIM</a>
       </div>
+
     </div>
+    </header>
+
+    <nav class="category-bar">
+      <ul class="category-list">
+        <li class="category-item">
+          <img src="./public/assets/iteration-2/icons/1.svg" alt="Yeni Kore" />
+          <span>YENİ! Kore</span>
+        </li>
+
+        <li class="category-item">
+          <img src="./public/assets/iteration-2/icons/2.svg" alt="Pizza" />
+          <span>Pizza</span>
+        </li>
+
+        <li class="category-item">
+          <img src="./public/assets/iteration-2/icons/3.svg" alt="Burger" />
+          <span>Burger</span>
+        </li>
+
+        <li class="category-item">
+          <img src="./public/assets/iteration-2/icons/4.svg" alt="Kızartmalar" />
+          <span>Kızartmalar</span>
+        </li>
+
+        <li class="category-item">
+          <img src="./public/assets/iteration-2/icons/5.svg" alt="Fast food" />
+          <span>Fast food</span>
+        </li>
+
+        <li class="category-item">
+          <img src="./public/assets/iteration-2/icons/6.svg" alt="Gazlı içecek" />
+          <span>Gazlı içecek</span>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="campaigns">
+      <div class="campaign-left">
+        <div class="campaign-text">
+          <p class="campaign-left-title">Özel <br /> Lezzetus</p>
+          <p class="campaign-left-desc">Position:Absolute Acı Burger</p>
+          <a href="#" class="campaign-button">SİPARİŞ VER</a>
+        </div>
+
+      </div>
+
+      <div class="campaign-right">
+        <div class="campaign-top">
+          <div class="campaign-toptext">
+          <p class="campaign-top-title">Hackathon Burger Menü</p>
+          <a href="#" class="campaign-button">SİPARİŞ VER</a>
+        </div>
+        <img 
+        src="./public/assets/iteration-2/cta/kart-2.png"
+        class="top-logo"
+        >
+        </div>
+        <div class="campaign-bottom">
+          <h2 class="campaign-bottom-title">Çoooook hızlı <br /> npm gibi kurye</h2>
+          <a href="#" class="campaign-button">SİPARİŞ VER</a>
+        </div>
+      </div>
+    </section>
+
+
   </body>
 
 </html>
