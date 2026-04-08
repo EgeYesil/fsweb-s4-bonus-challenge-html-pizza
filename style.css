@@ -16,9 +16,14 @@ body {
 .hero {
   background-color: #CE2829;
   background-image: url("./public/assets/iteration-1/home-banner.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
+  background-image:
+    url("./public/assets/iteration-1/toppings.png"),
+    url("./public/assets/iteration-1/sagdekor.png"),
+    url("./public/assets/iteration-1/soldekor.png"),
+    url("./public/assets/iteration-1/pizza.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: center, right top, left bottom, center bottom;
+  background-size: cover, 300px auto, 280px auto, min(900px, 88vw) auto;
 
   width: 100%;
   min-height: 100vh;
@@ -454,7 +459,10 @@ body {
 
   .hero {
     min-height: 78vh;
+    background-image: url("./public/assets/iteration-1/home-banner.png");
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
 
   .hero-logo {
